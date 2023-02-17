@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" contente="widht=device-width, initial-scale=1.0">
+    <title>PokeApi</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+
+<body>
+    <div class="container text-center w-25 mt-4">
+        <form>
+            <input class="form-control" type="text" placeholder="Pokemon...">
+            <button type="submit">Buscar</button>
+        </form>
+        <div class="pokemon-container" >
+
+        </div>
+    </div>
+    <main class="flex">
+        <article class="card">
+            <img src="./images/bg-pattern-card.svg" alt="imagen header card" class="card-header">
+            <div class="card-body">
+                <img id="imagenpok"  class="card-body-img">
+                <h1 id="nombre"  class="card-body-tittle"></h1>
+                <p id="tipo" class="card-body-text"></p>
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-social">
+                    <h3 id="exp"></h3>
+                    <p>EXP</p>
+                </div>
+                <div class="card-footer-social">
+                    <h3 id="defensa"></h3>
+                    <p>DEF</p>
+                </div>
+                <div class="card-footer-social">
+                    <h3 id="ataque"></h3>
+                    <p>ATTACK</p>
+                </div>
+                <div class="card-footer-social">
+                    <h3 id="hp"></h3>
+                    <p>HP</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
