@@ -10,7 +10,7 @@ González Guzman María José #19211650
 //Se traen los atributos del html a una constante para utilizarlos
 // const input = document.querySelector('input');
 const button = document.querySelector('button');
-const pokemonContainer = document.querySelector('.card'); //es un tipo de atributo que deriva del css
+const perfilContainer = document.querySelector('.card'); //es un tipo de atributo que deriva del css
 
 //Al botón se le agrega un evento para usar la función traerperfil
 button.addEventListener('click', (e)=>{
@@ -49,7 +49,7 @@ function traerPerfil(){ //se le agrega un parámetro
 
 function crearPerfil(data){
     for(var i=0; i <5000; i++){
-        const img = document.getElementById('imagenpok');//se crea una constante para otorgar la imagen
+        const img = document.getElementById('imagenper');//se crea una constante para otorgar la imagen
         img.src=data.results[i].picture.large;//se busca la imagen en los datos del perfil
 
         //Se crea una constante para el nombre y se busca el nombre en los datos.
