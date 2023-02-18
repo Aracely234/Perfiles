@@ -14,18 +14,21 @@
 </head>
 
 <body>
-    <div class="container text-center w-25 mt-4">
+    <div class="container text-center w-25 mt-4" align="center">
         <form>
-            <input class="form-control" type="text" placeholder="Pokemon...">
-            <button type="submit">Buscar</button>
+            <!-- <input class="form-control" type="text" placeholder="Pokemon..."> -->
+            <p>Buscador aleaotorio de usuarios de Twitter</p>
+            <button type="submit">Pulsa para  buscar</button>
         </form>
         <div class="pokemon-container" >
-
         </div>
     </div>
-    <main class="flex">
-        <article class="card">
-            <img src="./images/bg-pattern-card.svg" alt="imagen header card" class="card-header">
+    <main class="flex loading">
+        <div class="loader" id="loader">
+            <div class = "spinner" ></div>
+          </div>
+        <article class="card" id="card">
+            <img src="./images/bg-pattern-card.svg" alt="imagen header card" class="card-header" loading="lazy">
             <div class="card-body">
                 <img id="imagenpok"  class="card-body-img">
                 <h1 id="nombre"  class="card-body-tittle"></h1>

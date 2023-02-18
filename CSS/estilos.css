@@ -35,6 +35,7 @@ body{
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 2px 2px 4px rgba(29, 29, 29, 0.767);
+    display: none;
 }
 
 .card-header{
@@ -90,6 +91,28 @@ body{
     display: flex;
     justify-content: space-around;
 }
+.loader{
+	display: none;
+}
+.spinner {
+    border: 16px solid #98345439;
+    border-radius: 50%;
+    border-top: 16px solid #453553;
+    width: 50px;
+    height: 50px;
+    -JS-animation: spin 1s linear infinite; 
+    animation: spin 1s linear infinite;
+  }
+  @-JS-keyframes spin {
+    0% { -JS-transform: rotate(0deg); }
+    100% { -JS-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 p{
     letter-spacing: 1px;
     text-align: center;
